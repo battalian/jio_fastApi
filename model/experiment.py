@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 
 from pydantic import BaseModel
 
@@ -8,4 +8,4 @@ class Experiment(BaseModel):
     name: str
     description: str
     author_name: str
-    tags: [str]
+    tags: List[str]
